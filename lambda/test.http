@@ -1,0 +1,27 @@
+GET
+{
+  "routeKey": "GET /items"
+}
+
+
+GET
+{
+  "routeKey": "GET /items/{id}",
+  "pathParameters": {
+    "id": "123"
+  }
+}
+
+PUT
+{
+  "routeKey": "PUT /items",
+  "body": "{\"id\": \"1\", \"name\": \"Laptop\", \"price\": 1200}"
+}
+
+DELETE
+{
+  "routeKey": "DELETE /items/{id}",
+  "pathParameters": {
+    "id": "123"
+  }
+}
